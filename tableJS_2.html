@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link href="./table_JS.css" rel="stylesheet" />
+    <title> The lists of mouvies about Harry Potter </title>
+</head>
+<body>
+    <table id = "table" style="
+        background-color: azure;
+        font-size: 20px;
+        border: 1px outset black;">
+
+    </table>
+
+
+    <script>
+        // window.onload = () => {
+            let table = document.querySelector ('#table');
+            let array = [ 
+                ["Фильм", "Год", "Слоган", "Сюжет"],                                                        
+                ["Гарри Поттер и Филосовский камень", "Путешествие в твою мечту", 2001, "Описание."],       
+                ["Гарри Поттер и Тайная комната", "Зло вернулось в Хогвартс", 2002, "Описание."],
+                ["Гарри Поттер и Узник Азкабана", "Всё изменится", 2004, "Описание"],        
+                ["Гарри Поттер и Огненный кубок", "Впереди темные и страшные времена", 2005, "Описание."], 
+                ["Гарри Поттер и Орден феникса", "Выжить суждено только одному", 2007, "Описание."], 
+                ["Гарри Поттер и Дары Смерти. Часть 1", "Опасность повсюду", 2010, "Описание"],        
+                ["Гарри Поттер и Дары Смерти. Часть 2", "Все закончится", 2011, "Описание."],       
+                ["Фантастические твари и где они обитают", "Открой новую главу волшебного мира Дж.К.Роулинг", 2016, "Описание."],       
+                ["Фантастические твари: Преступления Грин-де-Вальда", "Кто сможет изменить будущее?", 2018, "Описание."],      
+            ];
+
+            fillTable (table, array);
+
+            function fillTable (table, array) {
+                for (let i=0; i < array.length; i++) {
+                    let tr = document.createElement ('tr');
+                     
+
+                    for (let j=0; j < array[i].length; j++) {
+                        let td = document.createElement ('td');
+                        td.innerHTML = array [i] [j];
+                        tr.appendChild (td);
+                    }
+
+                    table.appendChild (tr);
+                } 
+            }
+    </script>
+
+    <style>
+        table td {
+            width: 50%;
+            border: 1 px outset burlywood;
+        }
+    </style>
+</body>
+</html>
