@@ -1,0 +1,26 @@
+#table {
+    background-color: azure; 
+    /*background: 
+        url("https://img2.goodfon.ru/wallpaper/big/9/50/fantastika-fantasy-hogwarts.jpg") no-repeat;  замок
+    background:
+        url("https://www.sunhome.ru/i/wallpapers/21/garri-potter-4-oboi.960x540.jpg") no-repeat;  светлый фон и сова
+    background:
+        url("http://cdn.oboi7.com/static/images/m/57/8a/578a2f8813b3e98274c507485dfa34badef181ad.jpg") 100% 100% no-repeat;
+        width:280%;
+        height: 100%;                   это я пробовала сделать картинку фоном таблицы*/
+    font-size: 20px;
+    border: 1px solid black; 
+    width: 80%; 
+}
+
+th {
+    font-weight: normal;
+    color: #039;
+    padding: 10px 15px;
+  }
+  td {
+    color: #669;
+    border-top: 1px solid #e8edff;
+    padding: 10px 15px;
+  }
+  tr:hover td {background: #e8edff;}
